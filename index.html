@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usman Ali Khan's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Usman Ali Khan</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#hero">Home</a></li>
+              <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#about">About Me</a></li>
+              <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+    </header>
+<section id="hero" class="hero-section text-center text-white bg-primary">
+  <div class="container">
+    <h1 class="display-4">Welcome to My Portfolio</h1>
+    <p class="lead">Showcasing my skills, projects, and more!</p>
+  </div>
+</section>
+
+<section id="about" class="about-section py-5">
+  <div class="container">
+    <h2 class="text-center">About Me</h2>
+    <p class="text-center">Hi, I'm Usman Ali Khan, a passionate data scientist skilled in deriving insights from data and building impactful solutions.</p>
+  </div>
+</section>
+
+<section id="skills" class="skills-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h3>Python</h3>
+        <p>Advanced proficiency in Python for data analysis and machine learning.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Data Visualization</h3>
+        <p>Expertise in creating insightful visualizations using tools like Matplotlib, Seaborn, and Tableau.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Machine Learning</h3>
+        <p>Hands-on experience with scikit-learn, TensorFlow, and other ML libraries.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects-section py-5">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Project 1</h4>
+            <p class="card-text">Description of the first project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Project 2</h4>
+            <p class="card-text">Description of the second project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Project 3</h4>
+            <p class="card-text">Description of the third project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center">Contact</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer-section text-center text-white bg-dark py-3">
+  <div class="container">
+    <p>Connect with me on:</p>
+    <a href="#" class="text-white me-2">LinkedIn</a>
+    <a href="#" class="text-white me-2">GitHub</a>
+    <a href="#" class="text-white">Twitter</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

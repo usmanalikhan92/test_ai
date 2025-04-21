@@ -1,0 +1,124 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4 {
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .hero-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .about-section, .skills-section, .projects-section, .contact-section {
+    padding: 50px 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #007bff;
+  }
+  
+  /* FLEXBOX LAYOUT */
+  .skills-section .row, .projects-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skills-section .col-md-4, .projects-section .col-md-4 {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  
+  .projects-section .card {
+    flex: 1 1 300px;
+    margin: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .projects-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* FORM STYLING */
+  .contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-section form input, 
+  .contact-section form textarea, 
+  .contact-section form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-section form input:focus, 
+  .contact-section form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .contact-section form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-section form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* MEDIA QUERIES */
+  @media (min-width: 768px) {
+    .skills-section .col-md-4, 
+    .projects-section .col-md-4 {
+      flex: 0 0 45%;
+      margin: 10px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .skills-section .col-md-4, 
+    .projects-section .col-md-4 {
+      flex: 0 0 30%;
+    }
+  
+    .hero-section {
+      padding: 100px 20px;
+    }
+  }
